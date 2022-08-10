@@ -7,6 +7,8 @@
    <title>Jummah chart</title>
   <!--  login page loading style -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Check online or offline -->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <!-- google fonts link -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,7 +35,7 @@
   <label> User Name</label>
 	<br>
 	<br>
-	<input type="text" name="uname" id="uname" placeholder="User Name" required autofocus>
+	<input type="text" name="uname" id="uname" placeholder="Enter UserName" maxlength="10" required autofocus>
 	<div id="check_uname">Please enter a valid userName !</div>
 	<br>
 	<br>
@@ -41,7 +43,7 @@
 	<label >Password</label>
 	<br>
 	<br>
-	<input type="password" name="password" id="password" placeholder="*******" required autofocus>
+	<input type="password" name="password" id="password" placeholder="*******" maxlength="10" required>
 	<br>
 	<input type="checkbox" onclick="showpassword();" id="showpwd"><label id="showpwd">show password</label>
 	<div id="check_pwd">Please Enter a valid password !</div>
@@ -53,6 +55,9 @@
 	//form validation and javascript content
 </script>
 <!-- table -->
+<div id="offline"><i class="fa fa-warning"></i>  No Network Connection !</div>
+<div id="online"><i class="fa fa-globe"></i>  Back Online !</div>
+<div id="session">Your Session is About to end shortly !<i class="fa fa-spinner fa-spin"></i></div>
    <div id="content" class="print-container">
 	 	
 	<table lang="ta" align="center" id="table">
@@ -260,47 +265,47 @@
 				<option>அம்ஜத்கான் - 9715886738</option>
 				<option>அப்துர்ரஹ்மான் பா - 9363692343</option>
 				<option>அப்துல் ஹமீத் - 9789704924</option>
-        			<option>அப்துல் மாலிக் - 8122625262</option>
+				<option>அப்துல் மாலிக் - 8122625262</option>
 				<option>அஷ்ரஃப் அலீ M.Sc - 6382546220</option>
 				<option>அதிரை ஹபிபு ரஹ்மான் - 9894906011</option>
-        			<option>அப்துல்லாஹ் - 8438236558</option>
-       				<option>அகமது பதுருதீன் - 9500811178</option>
+				<option>அப்துல்லாஹ் - 8438236558</option>
+				<option>அகமது பதுருதீன் - 9500811178</option>
 				<option>அப்துல் ரசீது - 7358860163</option>
    </optgroup>
    
    <optgroup label="--ஆ--">
-        			<option>ஆவணம் ரியாஸ் B.Tech - 9994585432</option>
-        			<option>ஆபிதீன் B.A - 9566788134</option>
+        <option>ஆவணம் ரியாஸ் B.Tech - 9994585432</option>
+        <option>ஆபிதீன் B.A - 9566788134</option>
     </optgroup> 
 
     <optgroup label="--இ--">
-				<option>இனாமுல் MISc - 9791759705</option>
-				<option>இக்பால் - 8754869528</option>
-				<option>இலியாஸ் MISc - 8668055942</option>
-    </optgroup>
+        <option>இனாமுல் MISc - 9791759705</option>
+        <option>இக்பால் - 8754869528</option>
+        <option>இலியாஸ் MISc - 8668055942</option>
+</optgroup>
 
 <optgroup label="--ஃ--">
-       				 <option>ஃபஜுல்ரஹ்மான் - 9491085851</option>
+        <option>ஃபஜுல்ரஹ்மான் - 9491085851</option>
 </optgroup>
 
 <optgroup label="--ச--">
-				<option>சபீர் அலி - 9600951725</option>
-							<option>சிக்கந்தர் - 9384357357 </option>
-				<option>செய்யத் முஸ்தபா B.Tech - 9715113441</option>
-				<option>சேக் அப்துல்காதர் B.E - 8807137959</option>
+        <option>சபீர் அலி - 9600951725</option>
+		<option>சிக்கந்தர் - 9384357357 </option>
+        <option>செய்யத் முஸ்தபா B.Tech - 9715113441</option>
+        <option>சேக் அப்துல்காதர் B.E - 8807137959</option>
 </optgroup>
 
 <optgroup label="--ந--">
-				<option>நவாப்ஷா - 8838370094</option>
-      				<option>நுஹ்மான் - 8870880618</option>
+		<option>நவாப்ஷா - 8838370094</option>
+        <option>நுஹ்மான் - 8870880618</option>
 </optgroup>
 
 <optgroup label="--ப--">
-       				<option>பட்டுக்கோட்டை பாரூக் - 6382236258</option>
-				<option>பாரீஸ் B.Sc - 8270912463</option>
-				<option>பாரூக் MISc - 9994256863</option>
-				<option>பாரி  - 7094907792 </option>
-				<option>பக்கீர் முகமது - 9994469222</option>
+        <option>பட்டுக்கோட்டை பாரூக் - 6382236258</option>
+		<option>பாரீஸ் B.Sc - 8270912463</option>
+		<option>பாரூக் MISc - 9994256863</option>
+		<option>பாரி  - 7094907792 </option>
+		<option>பக்கீர் முகமது - 9994469222</option>
 </optgroup>
 
 <optgroup label="--ம--">
@@ -338,6 +343,15 @@
 				<option>MISc Student - 8526132121</option>
 </optgroup>
 
+<optgroup label="மைசூர்">
+				<option>மைசூர் அஜீஸ் MISC - 9384703198</option>
+				<option>மைசூர் முஸ்தாக் அலி	8748858287</option>
+				<option>மைசூர் லுக்மான் MISC - 8508923310</option>
+				<option>மைசூர் சலீம் IC - 9500796289</option>
+				<option>மைசூர் ரஹ்மதுல்லாஹ் IC - 9150409571</option>
+				<option>மைசூர் இலியாஸ் MISC - 7200387307</option>
+</optgroup>
+
      </optgroup>
 			</select>`;
  document.getElementById("kilai_1").insertAdjacentHTML("afterbegin",dhayi_names);
@@ -371,9 +385,9 @@
 	<button id="button" onclick="printing();">DOWNLOAD PDF!</button>
 </center>
 <br>
- <footer>
+ <footer style="font-family: 'Tiro Tamil', serif;">
 	<cite style="font-weight:bolder;">  ©️ Copyright 2022 TNTJ THANJAI SOUTH </cite>
-	<a class="change" href="mailto:ithris615@gmail.com" title="send your feedback" onclick="alert('Opening G-Mail or E-Mail...')"><em style="font-weight: bolder;">feed back?</em></a>
+	<a class="change" href="mailto:ithris615@yahoo.com" title="send your feedback" onclick="alert('Opening G-Mail or E-Mail...')"><em style="font-weight: bolder;">feed back?</em></a>
 </footer> 
 </body>
 </html>
