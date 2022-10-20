@@ -194,7 +194,7 @@
                           background-color:white;
 			margin: 10px 50px 100px 50px;		
 		}
-		tr{
+		td{
 			background-color: #ead5ab;
 		}
 		td,th{
@@ -222,11 +222,11 @@
 			text-align: center;
 			padding: 10px 15px 1px;
 		}
-		img{
-			border-radius: 30px;
-		}
+		/*img{
+			border-radius:20px;
+		}*/
 		select{
-			border: 1px solid white;
+			border: 1px solid #ead5ab;
 			background-color: #ead5ab;
 			text-align: left;
 			padding:5px;
@@ -266,7 +266,7 @@
 			font-family: 'Tiro Tamil', serif !important;
 			border-collapse: collapse !important;	
 			/*font-weight: bolder !important;*/
-			margin: 90px 60px 90px !important;
+			margin: 80px 45px 80px !important;
       background-color: white !important;
 		}
 		
