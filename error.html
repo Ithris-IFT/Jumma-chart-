@@ -12,13 +12,15 @@
         function checkBrowser(){
         var browsername=platform.name;
         console.log(browsername)
-        if (platform.name==="Chrome Mobile"||platform.name==="Chrome"||platform.name==="") {
+        if (platform.name==="Chrome Mobile"||platform.name==="Chrome"||platform.name==="Microsoft Edge"||platform.name==="Opera Mobile"||platform.name==="") {
             console.log("its chrome")
             setTimeout(()=>{window.open('index.html','_self');},2000);
             
 
                }else if( platform.name==="Samsung Internet"){
-                 alert("please switch dark mode to light mode in your mobile settings,in dark mode this webpage doesn't work properly.")
+                        alert("SAMSUNG INTERNET BROWSER \n Please switch dark mode to light mode in your Browser Settings or mobile settings,in dark mode this webpage doesn't work properly.\nwe recommend the chrome browser to Access this Webpage :)")
+
+               
 
                }
         else{
